@@ -1,0 +1,49 @@
+.kemicofa-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: stretch;
+}
+h1 {
+    color: white;
+}
+h3 {
+    color: white;
+    font-family: Florentia Regular;
+    text-align: center;
+    border-radius: 8px;
+    border-style:solid;
+    border-color:#47c9af; 
+    padding: 0.3em ;
+    
+
+}
+
+.kemicofa-row > * {
+    flex-basis: 20rem;
+    flex-shrink: 0;
+}
+
+.kemicofa-row .card {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.kemicofa-row .card > .card-content {
+    flex-grow: 1;
+}
+
+.kemicofa-row .card > .card-image {
+    flex-basis: 25rem;
+    flex-shrink: 0;
+    overflow-y: hidden;
+    background-color: grey;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-image: linear-gradient(120deg, #0F2027 5%, #203A43 30%,#2C5364 70%);
+}
